@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { fetchData } from '../actions';
 import NasaImage from './NasaImage';
 import NasaVideo from './NasaVideo';
+import NasaDatePicker from './NasaDatePicker';
 
 class App extends React.Component {
   componentDidMount() {
@@ -20,6 +21,7 @@ class App extends React.Component {
         ) : (
           <NasaVideo></NasaVideo>
         )}
+        <NasaDatePicker></NasaDatePicker>
       </div>
     );
   }
