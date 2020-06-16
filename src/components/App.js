@@ -1,8 +1,12 @@
 import React from 'react';
 import '../sass/App.scss';
+import { connect } from 'react-redux';
 
-function App() {
+function App(props) {
+  console.log(props);
   return <div className="app">agzx</div>;
 }
 
-export default App;
+const mapStateToProps = (state) => state;
+
+export default connect(mapStateToProps, {})(App);
